@@ -1,0 +1,360 @@
+:root {
+  --main-color: #333;
+  --secondary-color: #43853d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Roboto',
+  sans-serif;
+  overflow-X: hidden;
+}
+
+.header {
+  background: var(--main-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.header__logo, .header__nav {
+  text-align: center;
+}
+
+.header__logo img {
+  width: 122px;
+  height: 75px;
+}
+
+.header__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+.header__list-item {
+  color: #ccc;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 0px 16px;
+  border-left: 1px solid #ccc;
+  position: relative;
+}
+
+.header__list-item:hover {
+  text-decoration: underline;
+}
+
+.header__list-item--active:after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: var(--main-color);
+  transform: translateX(-50%) rotate(45deg);
+  position: absolute;
+  top: 22px;
+  left: 50%;
+}
+
+.header__lang {
+  position: absolute;
+  right: 11px;
+  bottom: 11px;
+  z-index: 1;
+}
+
+.header__lang .container {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.header__lang span {
+  display: inline-block;
+  color: #ccc;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.header__lang-list {
+  position: absolute;
+  right: 0;
+  top: 41px;
+  min-width: 185px;
+  background: var(--main-color);
+  max-height: 250px;
+  overflow-Y: auto;
+  display: none;
+}
+
+.header__lang-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__lang-list li {
+  color: #ccc;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.header__lang-list li:hover {
+  background: var(--secondary-color);
+}
+
+.main-section {
+}
+
+.main-section .container {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  row-gap: 15.3px;
+  padding: 25px 0;
+}
+
+.main-section .container > div {
+  text-align: center;
+}
+
+.main-section__runtime {
+  font-size: 20px;
+  color: #333;
+}
+
+.main-section__runtime a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.main-section__runtime a:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.main-section__blackLivesMatter a{
+  background: #4f4f4f;
+  box-shadow: 0 1px 2px #595959;
+  border: #4a4a4a;
+  text-shadow: 0 -1px 1px #0d0d0d;
+  background-image: linear-gradient(to bottom, #545454, #454545);
+  border-radius: 2px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 128%;
+  width: 400px;
+  display: inline-block;
+  padding: 15px 32px;
+  transition: all .3s;
+}
+
+.main-section__blackLivesMatter a:hover {
+  width: 420px;
+  background: black;
+}
+
+.main-section__declaration p{
+  padding: 08px 25px;
+  background: #eaf5e9;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+.main-section__declaration a {
+  color: #026e00;
+  text-decoration: none;
+  font-size: 141%;
+}
+
+.main-section__declaration a:hover {
+  background: #43853d;
+  color: #f2f2f2;
+}
+
+.main-section__download-title h1{
+  font-size: 30px;
+  color: #333;
+  font-weight: normal;
+  margin: 0;
+}
+
+.main-section__downlaod-way {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-download{
+  margin-right: 30px;
+}
+
+.btn-download button {
+  background: #026e00;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+  width: 250px;
+}
+
+.btn-download h2 {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+.btn-download span {
+  font-size: 14px;
+  display: inline-block;
+  padding-top: 8px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+
+.btn-download-other ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: start;
+  padding: 0;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.btn-download-other li:not(:last-child) {
+  padding: 0 10px;
+  border-right: 1px solid #51744e;
+}
+
+.btn-download-other a {
+  font-size: 13.45px;
+  color: #51744e;
+  text-decoration: none;
+}
+
+.btn-download-other a:hover {
+  border-bottom: 1px solid #51744e;
+}
+
+.footer {
+  background: var(--main-color);
+}
+
+.footer .container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__col {
+  align-self: center;
+}
+
+.footer__col a {
+  color: rgb(204, 204, 204);
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 0 8px;
+}
+
+.footer p {
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer__link {
+  color: rgb(204, 204, 204);
+  text-decoration: none; 
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial__card {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  width: 300px;
+  padding: 1.3em 1em;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.testimonial__card p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header__list li {
+    margin-bottom: 10px;
+  }
+
+  .header__list-item--active:after {
+    display: none;
+  }
+
+  .header__list-item--active {
+    background: var(--secondary-color);
+  }
+
+  .main-section__declaration p {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-section__blackLivesMatter a{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0;
+  }
+  .main-section__blackLivesMatter a:hover {
+    width: 95%;
+  }
+
+  .main-section__downlaod-way {
+    flex-direction: column;
+  }
+  
+  .btn-download {
+    margin-right: 0;
+  }
+
+  .btn-download-other ul {
+    justify-content: center;
+  }
+
+  .btn-1 {
+    margin-bottom: 20px;
+  }
+
+  .footer__row {
+    flex-direction: column;
+  }
+}

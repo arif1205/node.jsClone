@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js</title>
+  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/fbba2cd293.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Heading part Start -->
+  <header id="header" class="header">
+    <div class="header__logo" style="padding-top: 12px;">
+      <img src="logo.svg" alt="NodeJs">
+    </div>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li><a href="#" class="header__list-item header__list-item--active" style="border-left: none;">home</a></li>
+        <li><a href="#" class="header__list-item">about</a></li>
+        <li><a href="#" class="header__list-item">downloads</a></li>
+        <li><a href="#" class="header__list-item">docs</a></li>
+        <li><a href="#" class="header__list-item">get involved</a></li>
+        <li><a href="#" class="header__list-item">securituy</a></li>
+        <li><a href="#" class="header__list-item">certification</a></li>
+        <li><a href="#" class="header__list-item">news</a></li>
+      </ul>
+    </nav>
+    <div class="header__lang">
+      <div class="container">
+        <span title="English" id="languageIcon"><i class="fas fa-globe"></i></span>
+
+        <div class="header__lang-list" id="headerLangList">
+          <ul>
+            <li>العربية</li>
+            <li>Catalan</li>
+            <li>Deutsch</li>
+            <li>Español</li>
+            <li>زبان فارسی</li>
+            <li>Français</li>
+            <li>Bengali</li>
+            <li>Hindi</li>
+            <li>English</li>
+            <li>日本語</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- body part start -->
+  <section id="main-section" class="main-section">
+    <div class="container">
+      <div class="main-section__runtime">
+        <p>Node.js® is a JavaScript runtime built on <a href="#">Chrome's V8 JavaScript engine</a></p>
+      </div>
+      <div class="main-section__blackLivesMatter">
+        <a href="#" class="btn btn-secondary">#BlackLivesMatters</a>
+      </div>
+      <div class="main-section__declaration">
+        <p><a href="#">Node.js Certifications and Trainings are on sale, now until Dec. 8</a></p>
+      </div>
+      <div class="main-section__download-title">
+        <h1>Download for Windows (x64)</h1>
+      </div>
+      <div class="main-section__downlaod-way">
+        <div class="btn-1">
+          <div class="btn-download">
+            <button>
+              <h2>14.15.1 LTS</h2>
+              <span>Recommanded for most users</span>
+            </button>
+          </div>
+          <div class="btn-download-other">
+            <ul>
+              <li style="padding-left: 0px;"><a href="#">Other Downloads</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li style="padding-right: 0px; padding-left: 10px;"><a href="#">API Docs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="btn-download" style="margin-right: 0;">
+            <button>
+              <h2>15.4.0 Current</h2>
+              <span>Latest features</span>
+            </button>
+          </div>     
+          <div class="btn-download-other">
+            <ul>
+              <li style="padding-left: 0px;"><a href="#">Other Downloads</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li style="padding-right: 0px; padding-left: 10px;"><a href="#">API Docs</a></li>
+            </ul>
+          </div>     
+        </div>
+      </div>
+      <div class="main-section__runtime">
+        <p>Or have a look at the <a href="#">Long Term Support (LTS) schedule</a>.</p>
+      </div>
+    </div>
+  </section>
+  <!-- body part end -->
+
+  <!-- footer part start -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__col">
+          <img src="openjs.svg" alt="Open Js Logo" width="120" height="38">
+        </div>
+        <div class="footer__col">
+          <ul class="header__list">
+            <li><a href="#" class="header__list-item" style="border-left: none;">Report Node.Js Issue</a></li>
+            <li><a href="#" class="header__list-item">Report Website Issue</a></li>
+            <li><a href="#" class="header__list-item">Get Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>© OpenJS Foundation. All Rights Reserved. Portions of this site originally © Joyent.</p>
+      <p>Node.js is a trademark of Joyent, Inc. and is used with its permission. Please review the <a href="#" class="footer__link">Trademark List</a> and <a href="#" class="footer__link">Trademark Guidelines</a> of the <a href="#" class="footer__link">OpenJS Foundation</a>. <a href="#" class="footer__link">Node.js Project Licensing Information.</a></p>
+      <div class="testimonial">
+        <div class="testimonial__card">
+          <div class="img">
+            <img src="addaleax.jpg" alt="Testimonial profile" height="40" width="40">
+          </div>
+          <div>
+            <p>Thank you <a href="#" class="footer__link">addaleax</a> for being a <a href="#" class="footer__link">Node.js contributor 1505 contributions</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer part end -->
+
+
+  <script>
+    let lang = document.getElementById("languageIcon");
+    let headerLangList = document.getElementById("headerLangList");
+    console.log(lang, headerLangList);
+    lang.addEventListener('click', (e) => {
+      if (headerLangList.style.display == 'block') {
+        headerLangList.style.display = 'none';
+      } else {
+        headerLangList.style.display = 'block';
+      }
+    })
+  </script>
+</body>
+</html>
